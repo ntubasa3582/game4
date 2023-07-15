@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7328272319687380562}
   - component: {fileID: 7328272319687380563}
   - component: {fileID: 7328272319687380564}
+  - component: {fileID: 6772061739675482874}
   m_Layer: 0
   m_Name: BoundBlock
   m_TagString: GameObject
@@ -99,7 +100,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -116,7 +117,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7328272319687380565}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5a5f75ee019f1a349889eebd9b8c9e4e, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -133,3 +134,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6772061739675482874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328272319687380565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94aae09839648e849b949b5a6f9607bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _impulsePower: 15

@@ -8,7 +8,7 @@ public class DeadLineControllor : MonoBehaviour
     {
         if (collision.gameObject.tag == "GameObject")
         {
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject); //生成されるオブジェクトを消している
         }
     }
 }
