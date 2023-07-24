@@ -8,23 +8,23 @@ using UnityEngine.UI;
 public class StageCler : MonoBehaviour
 {
     [SerializeField] float _interval = 1;
-    [SerializeField] Text _clearText;
+    [SerializeField] Canvas _clearCanvas;
 
     private void Start()
     {
-        _clearText.enabled = false;
+        _clearCanvas.enabled = false;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            _clearText.enabled = true;
+            _clearCanvas.enabled = true;
             StartCoroutine("SceneChange");
         }
     }
     public void SceneMove()
     {
-        SceneManager.LoadScene("StageSelect");
+        //SceneManager.LoadScene("StageSelect");
     }
 
     IEnumerator SceneChange()
