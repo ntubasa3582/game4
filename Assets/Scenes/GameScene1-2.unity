@@ -1099,7 +1099,7 @@ GameObject:
   - component: {fileID: 770519621}
   - component: {fileID: 770519622}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2337,6 +2337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _xpos: -14.7
   _ypos: 3
+  _offset: 2
 --- !u!1 &2094146412
 GameObject:
   m_ObjectHideFlags: 0
