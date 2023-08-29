@@ -10,7 +10,7 @@ public class BallController : MonoBehaviour
     [Header("Y座標")]
     [SerializeField, Tooltip("Y座標")] float _ypos;
     //コライダーのオフセット
-    const float _offset = 1.5f;
+    const float _offset = 1.8f;
     //このオブジェクトの子オブジェクト
     GameObject _goChild;
     //子オブジェクトのCIrcleCollider2D
@@ -34,7 +34,7 @@ public class BallController : MonoBehaviour
     }
     IEnumerator DragChange()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         rigidbody2D.drag -= 3;
     }
 }

@@ -5,8 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneMove : MonoBehaviour
 {
-    public void SceneMove11(string  sceneName)
+    [SerializeField] float _interval;
+    [SerializeField] string sceneName;
+
+    public void SceneMove11()
     {
+        StartCoroutine("Scenemove");
+    }
+    IEnumerator Scenemove()
+    {
+        yield return new WaitForSeconds(_interval);
         SceneManager.LoadScene(sceneName);
     }
+
 }
