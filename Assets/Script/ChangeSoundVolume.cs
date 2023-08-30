@@ -6,7 +6,7 @@ using UnityEngine;
 public class ChangeSoundVolume : MonoBehaviour
 {
     AudioSource _audioSource;
-    float _interval = 3f;
+    float _interval = 0f;
     private void Start()
     {
         // "AudioSource"コンポーネントを取得
