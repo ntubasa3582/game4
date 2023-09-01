@@ -109,7 +109,6 @@ GameObject:
   - component: {fileID: 3706277838384466220}
   - component: {fileID: 3706277838384466221}
   - component: {fileID: 3706277838384466222}
-  - component: {fileID: 3706277838384466209}
   - component: {fileID: 3706277838384466208}
   m_Layer: 5
   m_Name: Button
@@ -246,19 +245,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interval: 1.5
-  sceneName: GameScene1-1
---- !u!114 &3706277838384466209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3706277838384466219}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a60b364968e4afc4e96d72fd0cb08672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _sceneName: 
+  _fadePanel: {fileID: 0}
+  _fadeMode: 0
 --- !u!114 &3706277838384466208
 MonoBehaviour:
   m_ObjectHideFlags: 0

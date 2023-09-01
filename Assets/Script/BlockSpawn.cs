@@ -57,7 +57,6 @@ public class BlockSpawn : MonoBehaviour
             {
                 obj.GetComponent<Animator>().speed = 0;
                 animStop = true;
-                Debug.Log(animStop);
             }
         }
 

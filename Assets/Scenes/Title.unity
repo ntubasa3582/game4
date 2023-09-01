@@ -630,8 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interval: 2
-  sceneName: StageSlect
-  _fade: {fileID: 89256031}
+  _fadePanel: {fileID: 0}
   _fadeMode: 1
 --- !u!1 &918001326
 GameObject:
@@ -829,8 +828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interval: 1.5
-  sceneName: StageSelect
-  _fade: {fileID: 0}
+  _fadePanel: {fileID: 0}
   _fadeMode: 0
 --- !u!4 &1608454981
 Transform:
@@ -1296,8 +1294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interval: 2
-  sceneName: StageSelect
-  _fade: {fileID: 89256031}
+  _fadePanel: {fileID: 89256031}
   _fadeMode: 1
 --- !u!114 &2032624234
 MonoBehaviour:
@@ -1359,15 +1356,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2032624233}
-        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
-        m_MethodName: SceneMove11
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: SceneMove
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: StageSelect
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2032624236

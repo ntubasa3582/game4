@@ -642,9 +642,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 694814654}
-        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
-        m_MethodName: SceneMove11
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: SceneMove
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -703,9 +703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interval: 0.1
-  sceneName: GameScene1-7
-  _fade: {fileID: 1009151102}
+  _interval: 0
+  _fadePanel: {fileID: 1009151102}
   _fadeMode: 1
 --- !u!114 &694814655
 MonoBehaviour:
@@ -809,9 +808,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 749282868}
-        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
-        m_MethodName: SceneMove11
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: SceneMove
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -870,9 +869,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interval: 0.1
-  sceneName: GameScene1-6
-  _fade: {fileID: 1009151102}
+  _interval: 0
+  _fadePanel: {fileID: 1009151102}
   _fadeMode: 1
 --- !u!114 &749282869
 MonoBehaviour:
@@ -894,6 +892,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3706277838384466218, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
   m_PrefabInstance: {fileID: 3706277837732436521}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &792646405 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+  m_PrefabInstance: {fileID: 3706277837732436521}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &863533067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,9 +1238,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1005346896}
-        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
-        m_MethodName: SceneMove11
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: SceneMove
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1290,9 +1299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interval: 0.1
-  sceneName: GameScene1-9
-  _fade: {fileID: 1009151102}
+  _interval: 0
+  _fadePanel: {fileID: 1009151102}
   _fadeMode: 1
 --- !u!114 &1005346897
 MonoBehaviour:
@@ -1774,9 +1782,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1171565109}
-        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
-        m_MethodName: SceneMove11
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: SceneMove
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1835,9 +1843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interval: 0.1
-  sceneName: GameScene1-5
-  _fade: {fileID: 1009151102}
+  _interval: 0
+  _fadePanel: {fileID: 1009151102}
   _fadeMode: 1
 --- !u!114 &1171565110
 MonoBehaviour:
@@ -2399,9 +2406,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1679767003}
-        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
-        m_MethodName: SceneMove11
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: SceneMove
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2460,9 +2467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interval: 0.1
-  sceneName: GameScene1-3
-  _fade: {fileID: 1009151102}
+  _interval: 0
+  _fadePanel: {fileID: 1009151102}
   _fadeMode: 1
 --- !u!114 &1679767004
 MonoBehaviour:
@@ -2566,9 +2572,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1833871216}
-        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
-        m_MethodName: SceneMove11
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: SceneMove
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2627,9 +2633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interval: 0.1
-  sceneName: GameScene1-2
-  _fade: {fileID: 1009151102}
+  _interval: 0
+  _fadePanel: {fileID: 1009151102}
   _fadeMode: 1
 --- !u!114 &1833871217
 MonoBehaviour:
@@ -2676,8 +2681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interval: 0
-  sceneName: 
-  _fade: {fileID: 0}
+  _fadePanel: {fileID: 0}
   _fadeMode: 0
 --- !u!4 &1856718913
 Transform:
@@ -2707,6 +2711,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1093536983, guid: c35a27e101adf3f4680d09a1011da99f, type: 3}
       propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1238888020, guid: c35a27e101adf3f4680d09a1011da99f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1238888020, guid: c35a27e101adf3f4680d09a1011da99f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1238888020, guid: c35a27e101adf3f4680d09a1011da99f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040418127, guid: c35a27e101adf3f4680d09a1011da99f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040418127, guid: c35a27e101adf3f4680d09a1011da99f, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1814027884740531237, guid: c35a27e101adf3f4680d09a1011da99f, type: 3}
@@ -2878,9 +2902,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1956198062}
-        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
-        m_MethodName: SceneMove11
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: SceneMove
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2939,9 +2963,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interval: 0.1
-  sceneName: GameScene1-8
-  _fade: {fileID: 1009151102}
+  _interval: 0
+  _fadePanel: {fileID: 1009151102}
   _fadeMode: 1
 --- !u!114 &1956198063
 MonoBehaviour:
@@ -3094,7 +3117,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1987190394}
-  - component: {fileID: 1987190395}
   m_Layer: 0
   m_Name: BackGround
   m_TagString: Untagged
@@ -3120,19 +3142,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1987190395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987190393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91420fd3354bea4ea37e0e271072949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ResetPosition: -17
 --- !u!1 &2027920666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,9 +3229,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2027920671}
-        m_TargetAssemblyTypeName: SceneMove, Assembly-CSharp
-        m_MethodName: SceneMove11
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: SceneMove
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3281,9 +3290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interval: 0.1
-  sceneName: GameScene1-4
-  _fade: {fileID: 1009151102}
+  _interval: 0
+  _fadePanel: {fileID: 1009151102}
   _fadeMode: 1
 --- !u!114 &2027920672
 MonoBehaviour:
@@ -3489,7 +3497,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103328334}
-  - component: {fileID: 2103328333}
   m_Layer: 0
   m_Name: BackGround (1)
   m_TagString: Untagged
@@ -3497,19 +3504,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &2103328333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103328332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91420fd3354bea4ea37e0e271072949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ResetPosition: 0
 --- !u!4 &2103328334
 Transform:
   m_ObjectHideFlags: 0
@@ -3623,6 +3617,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stage1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 792646405}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChange, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
       propertyPath: _fade
       value: 
@@ -3633,7 +3643,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
       propertyPath: _interval
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: _fadePanel
+      value: 
+      objectReference: {fileID: 1009151102}
+    - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: _sceneName
+      value: GameScene1-1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3706277838384466209, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}

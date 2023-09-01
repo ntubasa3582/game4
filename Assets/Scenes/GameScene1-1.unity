@@ -971,7 +971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &712114642
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1006,8 +1006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interval: 1
-  sceneName: GameScene1-2
-  _fade: {fileID: 1906910566}
+  _fadePanel: {fileID: 0}
   _fadeMode: 0
 --- !u!114 &712114644
 MonoBehaviour:
@@ -2516,6 +2515,10 @@ PrefabInstance:
     - target: {fileID: 2261752804176098249, guid: c3a136bf1fee53b4ab258d44af30567d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173916508378445436, guid: c3a136bf1fee53b4ab258d44af30567d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: GameScene1-2
       objectReference: {fileID: 0}
     - target: {fileID: 3173916508378445439, guid: c3a136bf1fee53b4ab258d44af30567d, type: 3}
       propertyPath: _fade

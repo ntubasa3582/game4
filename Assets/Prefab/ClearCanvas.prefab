@@ -377,10 +377,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: NextStageButton
       objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3173916508378445439}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChange, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: GameScene1-
+      objectReference: {fileID: 0}
     - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
       propertyPath: _fade
       value: 
       objectReference: {fileID: 2008300519347828427}
+    - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: _fadeMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
       propertyPath: _interval
       value: 0
@@ -389,13 +413,29 @@ PrefabInstance:
       propertyPath: sceneName
       value: GameScene1-2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: _fadePanel
+      value: 
+      objectReference: {fileID: 2008300519347828427}
+    m_RemovedComponents:
+    - {fileID: 3706277838384466209, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
 --- !u!224 &3173916508378445435 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3706277838384466218, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
   m_PrefabInstance: {fileID: 2261752804054548305}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3173916508378445439 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+  m_PrefabInstance: {fileID: 2261752804054548305}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2261752804629648362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -497,10 +537,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageSelectButton
       objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3173916509818755780}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChange, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706277838384466221, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: StageSelect
+      objectReference: {fileID: 0}
     - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
       propertyPath: _fade
       value: 
       objectReference: {fileID: 2008300519347828427}
+    - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: _fadeMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
       propertyPath: _interval
       value: 0
@@ -509,10 +573,26 @@ PrefabInstance:
       propertyPath: sceneName
       value: StageSelect
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+      propertyPath: _fadePanel
+      value: 
+      objectReference: {fileID: 2008300519347828427}
+    m_RemovedComponents:
+    - {fileID: 3706277838384466209, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
 --- !u!224 &3173916509818755776 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3706277838384466218, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
   m_PrefabInstance: {fileID: 2261752804629648362}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3173916509818755780 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3706277838384466222, guid: ed7df11e362f43e41bb7ca0d99565a63, type: 3}
+  m_PrefabInstance: {fileID: 2261752804629648362}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3ed557adb364f408c5bb886141d700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
