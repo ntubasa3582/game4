@@ -1973,6 +1973,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 35
       objectReference: {fileID: 0}
+    - target: {fileID: 3173916508378445436, guid: c3a136bf1fee53b4ab258d44af30567d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: GameScene1-7
+      objectReference: {fileID: 0}
     - target: {fileID: 3173916508378445439, guid: c3a136bf1fee53b4ab258d44af30567d, type: 3}
       propertyPath: sceneName
       value: GameScene1-7
@@ -2397,7 +2401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interval: 0
-  sceneName: 
+  _fadePanel: {fileID: 0}
+  _fadeMode: 0
 --- !u!4 &1924937257
 Transform:
   m_ObjectHideFlags: 0

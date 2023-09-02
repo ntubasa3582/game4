@@ -8,8 +8,13 @@ public class PauseManager2D : MonoBehaviour
     public delegate void Pause(bool isPause);
     Pause _onPauseResume = default;
     // Start is called before the first frame update
-    public Pause OnPauseResume { get => _onPauseResume; set => _onPauseResume = value; }
+    //public Pause OnPauseResume { get => _onPauseResume; set => _onPauseResume = value; }
 
+    public Pause OnPauseResume
+    {
+        get { return _onPauseResume; }
+        set { _onPauseResume = value; }
+    }
     void Update()
     {
         if (Input.GetButtonDown("Cancel"))

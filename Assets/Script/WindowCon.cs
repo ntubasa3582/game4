@@ -29,7 +29,7 @@ public class WindowCon : MonoBehaviour
                 _swich = true;
             }
 
-            Debug.Log(_swich);
+            //Debug.Log(_swich);
             //Debug.Log("a");
             //_windowCanvas.enabled = true;
             //_swich = true;
