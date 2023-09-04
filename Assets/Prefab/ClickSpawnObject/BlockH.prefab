@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 422178530170641648}
   - component: {fileID: 422178530170641663}
   - component: {fileID: 422178530170641662}
-  - component: {fileID: 4874607603099131721}
   - component: {fileID: -399766217916142908}
+  - component: {fileID: 5227268818327222368}
   m_Layer: 0
   m_Name: BlockH
   m_TagString: GameObject
@@ -135,19 +135,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4874607603099131721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422178530170641661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8172b3c975bd35a469ca89c3581b8625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interval: 60
 --- !u!95 &-399766217916142908
 Animator:
   serializedVersion: 5
@@ -169,3 +156,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5227268818327222368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422178530170641661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5b4811d76947848b5ee8e5453eced8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interval: 60

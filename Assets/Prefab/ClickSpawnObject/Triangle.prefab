@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3248406673468010392}
   - component: {fileID: 3248406673468010399}
   - component: {fileID: 3430396997608348011}
+  - component: {fileID: -627592280729245708}
+  - component: {fileID: 8427024863786682814}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: GameObject
@@ -244,3 +246,31 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &-627592280729245708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3248406673468010398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5b4811d76947848b5ee8e5453eced8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interval: 99999
+--- !u!114 &8427024863786682814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3248406673468010398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 10, y: -10}
+  m_UseGraphicAlpha: 1

@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class StageCler : MonoBehaviour
 {
     [SerializeField] float _interval = 1;
+    [SerializeField] GameObject _spawnGameobject;
+    [SerializeField] GameObject _managerGameObject;
     [SerializeField] Canvas _clearCanvas;
     [SerializeField, Tooltip("リセットしたいSceneの名前を入れる")] string _scenename;
     [SerializeField] bool _clearSwich = false;
@@ -22,7 +24,7 @@ public class StageCler : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.R)) //Rキーを押したらSceneをリロードできる
             {
-                SceneManager.LoadScene(_scenename);
+                //SceneManager.LoadScene(_scenename);
             }
         }
     }
@@ -33,6 +35,8 @@ public class StageCler : MonoBehaviour
             _clearCanvas.enabled = true;
             _clearSwich = true;
             StartCoroutine("SceneChange");
+            _spawnGameobject.SetActive(false);
+            _managerGameObject.SetActive(false);
         }
     }
     public void SceneMove()

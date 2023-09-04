@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,26 +7,39 @@ public class PauseManager2D : MonoBehaviour
 {
     bool _pauseFlg = false;
     public delegate void Pause(bool isPause);
-    Pause _onPauseResume = default;
+    public event Action<bool> OnPauseResume;
+    public event Action OnResetScene;
+    //Pause _onPauseResume = default;
+    //Pause _onResetScene = default;
     // Start is called before the first frame update
     //public Pause OnPauseResume { get => _onPauseResume; set => _onPauseResume = value; }
 
-    public Pause OnPauseResume
-    {
-        get { return _onPauseResume; }
-        set { _onPauseResume = value; }
-    }
+    //public Pause OnPauseResume
+    //{
+    //    get { return _onPauseResume; }
+    //    set { _onPauseResume = value; }
+    //}
     void Update()
     {
         if (Input.GetButtonDown("Cancel"))
         {
-            PauseResume();
+            _pauseFlg = !_pauseFlg;
+            OnPauseResume(_pauseFlg);
+        }
+        if (Input.GetButtonDown("Jump"))
+        {
+            OnResetScene();
         }
     }
 
-    void PauseResume()
-    {
-        _pauseFlg = !_pauseFlg;
-        _onPauseResume(_pauseFlg);
-    }
+    //void PauseResume()
+    //{
+    //    _pauseFlg = !_pauseFlg;
+    //    _onPauseResume(_pauseFlg);
+    //}
+
+    //void ResetScene()
+    //{
+
+    //}
 }

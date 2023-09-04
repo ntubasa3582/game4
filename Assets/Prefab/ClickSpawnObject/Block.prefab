@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7115588869198715069}
   - component: {fileID: 7115588869198715066}
   - component: {fileID: 7115588869198715067}
-  - component: {fileID: 2490857681290479779}
   - component: {fileID: -495268115650564751}
+  - component: {fileID: 5261894429965608799}
   m_Layer: 0
   m_Name: Block
   m_TagString: GameObject
@@ -135,19 +135,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2490857681290479779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7115588869198715064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8172b3c975bd35a469ca89c3581b8625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interval: 3.5
 --- !u!96 &-495268115650564751
 TrailRenderer:
   serializedVersion: 2
@@ -256,3 +243,16 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &5261894429965608799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7115588869198715064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5b4811d76947848b5ee8e5453eced8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interval: 3.5

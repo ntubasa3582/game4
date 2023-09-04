@@ -36,7 +36,7 @@ public class TextControllor : MonoBehaviour
         }
     }
 
-    public void Pause() //escが押されたらアニメーションスピードを0にする
+    public void Pause()
     {
         _animator.speed = 0;
     }

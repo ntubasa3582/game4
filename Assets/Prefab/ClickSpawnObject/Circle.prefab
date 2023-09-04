@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8032178450015347790}
   - component: {fileID: 8032178450015347791}
   - component: {fileID: 41918483338592712}
+  - component: {fileID: -212998818721722040}
   m_Layer: 0
   m_Name: Circle
   m_TagString: GameObject
@@ -232,3 +233,16 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &-212998818721722040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8032178450015347792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5b4811d76947848b5ee8e5453eced8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interval: 99999

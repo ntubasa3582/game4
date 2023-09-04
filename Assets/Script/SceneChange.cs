@@ -9,11 +9,12 @@ public class SceneChange : MonoBehaviour
 {
     [SerializeField] float _interval;//フェードインまでの時間
     //[SerializeField] string _sceneName;//Sceneの名前
-    [SerializeField] Image _fadePanel;//パネル
+    [SerializeField,Tooltip("フェードインパネル")] Image _fadePanel;//フェードパネル
     [SerializeField] int _fadeMode; //0がフェードアウトで1がフェードイン
     public void SceneMove(string _sceneName)
     {
-        _fadePanel.gameObject.SetActive(true);
+        _fadePanel.gameObject.SetActive(true); //フェードインパネルを非アクティブからアクティブにする
+        //１つ目の引数はフェードインパネルのa値を0から255にする
         _fadePanel.DOFade(1, _interval).OnComplete(() => SceneManager.LoadScene(_sceneName));
     }
 
