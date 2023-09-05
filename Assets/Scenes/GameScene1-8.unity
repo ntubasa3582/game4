@@ -1570,11 +1570,8 @@ MonoBehaviour:
   _clickText: {fileID: 2082385831}
   _objectBlock:
   - {fileID: 7115588869198715064, guid: 2c40075aad07d694e89e0368601bd977, type: 3}
-  - {fileID: 422178530170641661, guid: 60d70ea0af0148041b327b7145bd2218, type: 3}
-  - {fileID: 2651520355519869247, guid: 221a78bae7a26754f9604d621c66fa66, type: 3}
-  - {fileID: 7328272319687380565, guid: 9a31654dac909f04ebf6c43eac0e6878, type: 3}
   - {fileID: 8032178450015347792, guid: 70e8ccbe06e33294e8fb1e93fdbc98e5, type: 3}
-  - {fileID: 3248406673468010398, guid: 10df908baf9da204683e5a0800027f63, type: 3}
+  - {fileID: 7328272319687380565, guid: 9a31654dac909f04ebf6c43eac0e6878, type: 3}
   _secondCamera: {fileID: 768853147}
 --- !u!4 &1058418597
 Transform:

@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class Launcher : MonoBehaviour
 {
     [SerializeField] float _impulsePower;
+    [SerializeField] string _direction;
     Collider2D _touchingCollider;
     Rigidbody2D _rigidbody;
     void Start()
