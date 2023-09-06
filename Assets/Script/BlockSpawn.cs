@@ -5,18 +5,15 @@ using UnityEngine.UI;
 
 public class BlockSpawn : MonoBehaviour
 {
-    [SerializeField] float _interval = 1f;
+    [SerializeField] float _interval = 1f; //左クリックを連打できないようにするためのインターバル
     [SerializeField] Text _text2;
     [Header("クリック回数")]
-    [SerializeField] Text _clickText;
-    [SerializeField] GameObject[] _objectBlock;
-    //[SerializeField] GameObject _objectBlockH;
-    //[SerializeField] GameObject _objectBlockW;
-    //[SerializeField] GameObject _objectBlockB;
-    //[SerializeField] GameObject _objectCircle;
-    //[SerializeField] GameObject _objectTriangle;
-    [SerializeField] GameObject _secondCamera;
-    PauseManager2D _pauseManager;
+    [SerializeField] Text _clickText;　//左クリックしたら回数が増えるカメラ
+    [SerializeField] GameObject[] _objectBlock; //クリックで出現させるオブジェクトを入れる
+    [SerializeField] GameObject _secondCamera;　//右上で撮影するカメラをセットする
+    [SerializeField] GameObject _particle;
+    PauseManager2D _pauseManager; 
+    AudioSource _audioSource;
     int _objectCount = 0;
     int _clickCount;
     int _clickTextCount = 0;
@@ -29,6 +26,7 @@ public class BlockSpawn : MonoBehaviour
     void Awake()
     {
         _pauseManager = GameObject.FindObjectOfType<PauseManager2D>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     public void OnEnable()
@@ -55,14 +53,14 @@ public class BlockSpawn : MonoBehaviour
 
     public void Pause()
     {
-        _pause = true;
-        Debug.Log(_pause);
+        _pause = true; 
+        //Debug.Log(_pause);
     }
 
     public void Resume()
     {
         _pause = false;
-        Debug.Log(_pause);
+        //Debug.Log(_pause);
     }
 
 
@@ -70,11 +68,8 @@ public class BlockSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_pause == false)
+        if (_pause == false) //escが押されたらオブジェクトを生成できないようにする
         {
-            //Vector3 mouseposition = Input.mousePosition;
-            //mouseposition.z = 10;
-            //Vector3 target = Camera.main.ScreenToWorldPoint(mouseposition);
             bool animStop = false;
 
             _text2.text = (_objectCount % _objectBlock.Length).ToString();
@@ -107,20 +102,20 @@ public class BlockSpawn : MonoBehaviour
                 {
                     clickPosition = Input.mousePosition;
                     clickPosition.z = 10f;
-                    //if (target.y > 0)
-                    //{
                     //左クリックを押しした時にコライダーがあったらオブジェクトを生成しない
                     RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
                     if (hit.collider != null)
                     {
-                        //Debug.Log("あたり");
+
                     }
                     else
                     {
                         Instantiate(_objectBlock[_objectCount % _objectBlock.Length], Camera.main.ScreenToWorldPoint(clickPosition), _objectBlock[_objectCount % _objectBlock.Length].transform.rotation);
+                        //Instantiate(_particle, Camera.main.ScreenToWorldPoint(clickPosition), _particle.transform.rotation);
                         _clickTextCount++;
                         _clickCount++;
                         _text2.text = _clickCount.ToString("");
+                        _audioSource.Play();
                     }
                     //マウスカーソルの位置にオブジェクトが生成される
 

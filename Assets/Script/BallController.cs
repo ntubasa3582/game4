@@ -67,6 +67,8 @@ public class BallController : MonoBehaviour
     void ResetScene()
     {
         transform.position = new Vector2(_xpos, _ypos);
+        _rb.drag += 3;
+        StartCoroutine("DragChange");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

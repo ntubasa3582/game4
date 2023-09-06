@@ -7,18 +7,8 @@ public class PauseManager2D : MonoBehaviour
 {
     bool _pauseFlg = false;
     public delegate void Pause(bool isPause);
-    public event Action<bool> OnPauseResume;
-    public event Action OnResetScene;
-    //Pause _onPauseResume = default;
-    //Pause _onResetScene = default;
-    // Start is called before the first frame update
-    //public Pause OnPauseResume { get => _onPauseResume; set => _onPauseResume = value; }
-
-    //public Pause OnPauseResume
-    //{
-    //    get { return _onPauseResume; }
-    //    set { _onPauseResume = value; }
-    //}
+    public event Action<bool> OnPauseResume; //escƒL[‚ÅPause‰æ–Ê‚ğŒÄ‚Ño‚·
+    public event Action OnResetScene; //Space‚ÅScene‚Ì‰Šú‰»‚ğ‚·‚é
     void Update()
     {
         if (Input.GetButtonDown("Cancel"))
@@ -31,15 +21,4 @@ public class PauseManager2D : MonoBehaviour
             OnResetScene();
         }
     }
-
-    //void PauseResume()
-    //{
-    //    _pauseFlg = !_pauseFlg;
-    //    _onPauseResume(_pauseFlg);
-    //}
-
-    //void ResetScene()
-    //{
-
-    //}
 }

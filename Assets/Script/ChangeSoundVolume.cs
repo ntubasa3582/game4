@@ -11,7 +11,8 @@ public class ChangeSoundVolume : MonoBehaviour
     {
         // "AudioSource"コンポーネントを取得
         _audioSource = gameObject.GetComponent<AudioSource>();
-        StartCoroutine(MusicPlay());
+        _audioSource.volume = 0.5f;
+        //StartCoroutine(MusicPlay());
     }
 
     /// <summary>

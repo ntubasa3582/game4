@@ -19,7 +19,7 @@ public class SpawnObjectControllor : MonoBehaviour
 
     public void OnEnable()
     {
-        _pauseManager.OnPauseResume += PauseResume;
+        _pauseManager.OnPauseResume += PauseResume; //ÉfÉäÉQÅ[Égìoò^
         _pauseManager.OnResetScene += ResetScene;
     }
 
@@ -34,7 +34,7 @@ public class SpawnObjectControllor : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    void PauseResume(bool isPause)
+    void PauseResume(bool isPause)Å@
     {
         if (isPause)
         {
