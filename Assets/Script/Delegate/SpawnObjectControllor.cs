@@ -50,12 +50,14 @@ public class SpawnObjectControllor : MonoBehaviour
     {
        // _angularVelocity = _rb.angularVelocity;
         _velocity = _rb.velocity;
+        //_rb.bodyType = RigidbodyType2D.Static;
         _rb.Sleep();
 
     }
 
     public void Resume()
     {
+        //_rb.bodyType = RigidbodyType2D.Dynamic;
         _rb.WakeUp();
         _rb.velocity = _velocity;
     }

@@ -43,11 +43,11 @@ public class BallController : MonoBehaviour
         if (isPause)
         {
             _velocity = _rb.velocity;
-            _rb.Sleep();
+            _rb.bodyType = RigidbodyType2D.Static;
         }
         else
         {
-            _rb.WakeUp();
+            _rb.bodyType = RigidbodyType2D.Dynamic;
             _rb.velocity = _velocity;
         }
     }
