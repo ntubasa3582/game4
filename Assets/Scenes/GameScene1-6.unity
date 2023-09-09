@@ -1214,6 +1214,14 @@ PrefabInstance:
       propertyPath: _impulsePower
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6772061739675482874, guid: 9a31654dac909f04ebf6c43eac0e6878, type: 3}
+      propertyPath: _ImpulsePower2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6772061739675482874, guid: 9a31654dac909f04ebf6c43eac0e6878, type: 3}
+      propertyPath: _impulsePower1
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7328272319687380561, guid: 9a31654dac909f04ebf6c43eac0e6878, type: 3}
       propertyPath: m_RootOrder
       value: 2
