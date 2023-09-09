@@ -8,10 +8,11 @@ public class ObjectEvent : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        _action.Invoke();
         if (collision.gameObject.tag.Equals("Player"))
         { 
             Debug.Log("a");
-            _action.Invoke();
+            
         }
     }
 }

@@ -6,7 +6,8 @@ using UnityEngine.Events;
 
 public class Launcher : MonoBehaviour
 {
-    [SerializeField] float _impulsePower;
+    [SerializeField] float _impulsePower1;
+    [SerializeField] float _ImpulsePower2;
 
     [SerializeField,Header("1ÇÕâE 2ÇÕç∂")] int _impulseMode;
     Collider2D _touchingCollider;
@@ -23,14 +24,14 @@ public class Launcher : MonoBehaviour
     {
         if (collision.gameObject.tag == "GameObject" || collision.gameObject.tag == "Player")
         {
-            collision.rigidbody.AddForce(Vector2.up * _impulsePower, ForceMode2D.Impulse);//êGÇÍÇΩÇÁè„Ç…çsÇ≠
+            collision.rigidbody.AddForce(Vector2.up * _impulsePower1, ForceMode2D.Impulse);//êGÇÍÇΩÇÁè„Ç…çsÇ≠
             if (_impulseMode == 1)
             {
-                collision.rigidbody.AddForce(Vector2.right * _impulsePower, ForceMode2D.Impulse);
+                collision.rigidbody.AddForce(Vector2.right * _ImpulsePower2, ForceMode2D.Impulse);
             }
             else if (_impulseMode == 2)
             {
-                collision.rigidbody.AddForce(Vector2.left * _impulsePower, ForceMode2D.Impulse);
+                collision.rigidbody.AddForce(Vector2.left * _ImpulsePower2, ForceMode2D.Impulse);
             }
         }
     }
