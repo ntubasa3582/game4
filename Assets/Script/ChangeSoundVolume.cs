@@ -7,11 +7,11 @@ public class ChangeSoundVolume : MonoBehaviour
 {
     AudioSource _audioSource;
     float _interval = 0f;
+
     private void Start()
     {
         // "AudioSource"コンポーネントを取得
         _audioSource = gameObject.GetComponent<AudioSource>();
-        _audioSource.volume = 0.5f;
         //StartCoroutine(MusicPlay());
     }
 
@@ -30,4 +30,5 @@ public class ChangeSoundVolume : MonoBehaviour
         yield return new WaitForSeconds(_interval);
         _audioSource.Play();
     }
+
 }
