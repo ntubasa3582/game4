@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94aae09839648e849b949b5a6f9607bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _impulsePower1: 3
+  _impulsePower1: 2.5
   _ImpulsePower2: 0
   _impulseMode: 0
 --- !u!96 &908923825034232949

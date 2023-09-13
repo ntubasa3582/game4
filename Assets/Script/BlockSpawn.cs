@@ -14,7 +14,7 @@ public class BlockSpawn : MonoBehaviour
     [SerializeField] GameObject _particle;
     PauseManager2D _pauseManager; 
     AudioSource _audioSource;
-    int _objectCount = 0;
+    int _objectCount = 1;
     int _clickCount;
     int _clickTextCount = 0;
     float _timer;
@@ -68,6 +68,7 @@ public class BlockSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (_pause == false) //escが押されたらオブジェクトを生成できないようにする
         {
             bool animStop = false;
@@ -132,6 +133,10 @@ public class BlockSpawn : MonoBehaviour
             if (Input.GetMouseButtonDown(1)) //生成されるオブジェクトをショートカットで変える
             {
                 _objectCount++;
+                if (_objectCount > 3)
+                {
+                    _objectCount = 1;
+                }
                 Debug.Log(_objectCount);
                 if (obj != null)
                 {
@@ -141,72 +146,72 @@ public class BlockSpawn : MonoBehaviour
                 obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
                 obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             }
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                _objectCount = 0;
-                if (obj != null)
-                {
-                    Destroy(obj);
-                }
-                //別のカメラで1つ後のオブジェクトを撮影している
-                obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
-                obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                _objectCount = 1;
-                if (obj != null)
-                {
-                    Destroy(obj);
-                }
-                //別のカメラで1つ後のオブジェクトを撮影している
-                obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
-                obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                _objectCount = 2;
-                if (obj != null)
-                {
-                    Destroy(obj);
-                }
-                //別のカメラで1つ後のオブジェクトを撮影している
-                obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
-                obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha4))
-            {
-                _objectCount = 3;
-                if (obj != null)
-                {
-                    Destroy(obj);
-                }
-                //別のカメラで1つ後のオブジェクトを撮影している
-                obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
-                obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha5))
-            {
-                _objectCount = 4;
-                if (obj != null)
-                {
-                    Destroy(obj);
-                }
-                //別のカメラで1つ後のオブジェクトを撮影している
-                obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
-                obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha6))
-            {
-                _objectCount = 5;
-                if (obj != null)
-                {
-                    Destroy(obj);
-                }
-                //別のカメラで1つ後のオブジェクトを撮影している
-                obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
-                obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            }
+            //if (Input.GetKeyDown(KeyCode.Alpha1))
+            //{
+            //    _objectCount = 0;
+            //    if (obj != null)
+            //    {
+            //        Destroy(obj);
+            //    }
+            //    //別のカメラで1つ後のオブジェクトを撮影している
+            //    obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
+            //    obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            //}
+            //if (Input.GetKeyDown(KeyCode.Alpha2))
+            //{
+            //    _objectCount = 1;
+            //    if (obj != null)
+            //    {
+            //        Destroy(obj);
+            //    }
+            //    //別のカメラで1つ後のオブジェクトを撮影している
+            //    obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
+            //    obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            //}
+            //if (Input.GetKeyDown(KeyCode.Alpha3))
+            //{
+            //    _objectCount = 2;
+            //    if (obj != null)
+            //    {
+            //        Destroy(obj);
+            //    }
+            //    //別のカメラで1つ後のオブジェクトを撮影している
+            //    obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
+            //    obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            //}
+            //if (Input.GetKeyDown(KeyCode.Alpha4))
+            //{
+            //    _objectCount = 3;
+            //    if (obj != null)
+            //    {
+            //        Destroy(obj);
+            //    }
+            //    //別のカメラで1つ後のオブジェクトを撮影している
+            //    obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
+            //    obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            //}
+            //if (Input.GetKeyDown(KeyCode.Alpha5))
+            //{
+            //    _objectCount = 4;
+            //    if (obj != null)
+            //    {
+            //        Destroy(obj);
+            //    }
+            //    //別のカメラで1つ後のオブジェクトを撮影している
+            //    obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
+            //    obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            //}
+            //if (Input.GetKeyDown(KeyCode.Alpha6))
+            //{
+            //    _objectCount = 5;
+            //    if (obj != null)
+            //    {
+            //        Destroy(obj);
+            //    }
+            //    //別のカメラで1つ後のオブジェクトを撮影している
+            //    obj = Instantiate(_objectBlock[_objectCount % _objectBlock.Length], _secondCamera.transform.position + new Vector3(0, 0, 10f), Quaternion.identity, _secondCamera.transform);
+            //    obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            //}
         }
     }
 }
