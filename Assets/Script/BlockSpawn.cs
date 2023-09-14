@@ -137,7 +137,6 @@ public class BlockSpawn : MonoBehaviour
                 {
                     _objectCount = 1;
                 }
-                Debug.Log(_objectCount);
                 if (obj != null)
                 {
                     Destroy(obj);

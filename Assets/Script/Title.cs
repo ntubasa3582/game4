@@ -10,6 +10,8 @@ public class Title : MonoBehaviour
     [SerializeField] Image _fadePanel;
     [SerializeField] string _sceneName;
     [SerializeField] float _interval;
+    [SerializeField] GameObject[] _text;
+    int _objectCount = 0; //0‚ª‰©F 1—ÎF 2ÔF
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,33 @@ public class Title : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(1))
+        {
+            _objectCount++;
+            if (_objectCount > 2)
+            {
+                _objectCount = 0;
+            }
+            Debug.Log(_objectCount);
+        }
+        if (_objectCount == 0)
+        {
+            _text[0].SetActive(true);
+            _text[1].SetActive(false);
+            _text[2].SetActive(false);
+        }
+        else if (_objectCount == 1)
+        {
+            _text[0].SetActive(false);
+            _text[1].SetActive(true);
+            _text[2].SetActive(false);
+        }
+        else if ( _objectCount == 2)
+        {
+            _text[0].SetActive(false);
+            _text[1].SetActive(false);
+            _text[2].SetActive(true);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
