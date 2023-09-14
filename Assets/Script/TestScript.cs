@@ -10,7 +10,6 @@ public class TestScript : MonoBehaviour
     //[SerializeField] GameObject _obj2;
     void Start()
     {
-
         if (FindObjectsOfType<TestScript>().Length > 1)
         {
             Destroy(this.gameObject);
