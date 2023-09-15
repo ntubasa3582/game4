@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestScript : MonoBehaviour
+public class AudioDDOL : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] GameObject _obj1;
     //[SerializeField] GameObject _obj2;
     void Start()
     {
-        if (FindObjectsOfType<TestScript>().Length > 1)
+        if (FindObjectsOfType<AudioDDOL>().Length > 1)
         {
             Destroy(this.gameObject);
         }
