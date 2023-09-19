@@ -21,4 +21,6 @@ public class PauseManager2D : MonoBehaviour
             OnResetScene();
         }
     }
+
+
 }

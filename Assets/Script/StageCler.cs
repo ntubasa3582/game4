@@ -10,7 +10,6 @@ public class StageCler : MonoBehaviour
     [SerializeField] GameObject _spawnGameobject;
     [SerializeField] GameObject _managerGameObject;
     [SerializeField] Canvas _clearCanvas;
-    [SerializeField, Tooltip("リセットしたいSceneの名前を入れる")] string _scenename;
 
     private void Start()
     {
@@ -21,7 +20,6 @@ public class StageCler : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             _clearCanvas.enabled = true; //プレイヤーがこのオブジェクトに触れたらクリアキャンバスを表示する      
-            //StartCoroutine("SceneChange");
             _spawnGameobject.SetActive(false); //ステージクリア後にオブジェクトを生成しないようにセットアクティブをFalseにする
             _managerGameObject.SetActive(false); //ステージクリア後にsceneをリセットしないようにセットアクティブをFaseにする
         }

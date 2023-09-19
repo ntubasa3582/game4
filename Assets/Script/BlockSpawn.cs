@@ -11,7 +11,7 @@ public class BlockSpawn : MonoBehaviour
     [SerializeField] Text _clickText;　//左クリックしたら回数が増えるカメラ
     [SerializeField] GameObject[] _objectBlock; //クリックで出現させるオブジェクトを入れる
     [SerializeField] GameObject _secondCamera;　//右上で撮影するカメラをセットする
-    [SerializeField] GameObject _particle;
+    //[SerializeField] GameObject _particle;
     PauseManager2D _pauseManager; 
     AudioSource _audioSource;
     int _objectCount = 1;

@@ -7,6 +7,7 @@ public class AudioDDOL : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] GameObject _obj1;
+    [SerializeField] GameObject _spawn;
     //[SerializeField] GameObject _obj2;
     void Start()
     {
