@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BallController : MonoBehaviour
+public class TitleBallController : MonoBehaviour
 {
     PauseManager2D _pauseManager = default;
     Rigidbody2D _rb;
-    [Header("X座標")]
+    [Header("X座標")] 
     [SerializeField, Tooltip("X座標")] float _xpos;
     [Header("Y座標")]
     [SerializeField, Tooltip("Y座標")] float _ypos;
@@ -18,8 +18,7 @@ public class BallController : MonoBehaviour
     Vector2 _velocity;
     Transform _transform;
     GameObject[] _posObj; //ボールの座標を記録するObject
-    bool _posSwich = false;
-    bool _titleSwich = false;
+    bool _posSwich= false;
     private void Awake()
     {
         _pauseManager = GameObject.FindObjectOfType<PauseManager2D>();
@@ -29,35 +28,6 @@ public class BallController : MonoBehaviour
         _cC2D.radius = _offset;
         _transform = GetComponent<Transform>();
         _posObj = GameObject.FindGameObjectsWithTag("Pos"); //Posタグが付いたゲームオブジェクトをSceneの中で探して取ってくる
-        if (_posObj != null)
-        {
-            if (SceneManager.GetActiveScene().name != "Title")
-            {
-                this.transform.position = _posObj[0].transform.position;
-                //各シーンにある初期値が記録されているオブジェクトの座標にする
-            }
-        }
-        //Debug.Log("a");
-    }
-    void Update()
-    {
-        _posObj = GameObject.FindGameObjectsWithTag("Pos");
-        if (_posSwich == true)
-        {
-            if (SceneManager.GetActiveScene().name != "Title")
-            {
-                this.transform.position = _posObj[0].transform.position;//Scene切り替え時に座標を再取得
-                _posSwich = false;
-            }
-        }
-        if (SceneManager.GetActiveScene().name != "Title" || SceneManager.GetActiveScene().name != "StageSelect")
-        {
-            if (_titleSwich == false)
-            {
-                _posSwich = true;
-                _titleSwich = true;
-            }
-        }
     }
 
     public void OnEnable()
@@ -90,7 +60,7 @@ public class BallController : MonoBehaviour
 
     void ResetScene()
     {
-        this.transform.position = _posObj[0].transform.position; //スペースキーが押されたら初期座標に戻す
+        transform.position = new Vector2(_xpos, _ypos);
         ResetRb();
     }
 
@@ -105,7 +75,7 @@ public class BallController : MonoBehaviour
         //落下したらオブジェクトを初期位置に戻す
         if (collision.gameObject.tag == "DeadLine")
         {
-            transform.position = new Vector2(_xpos, _ypos);
+            transform.position = new Vector2(_xpos, _ypos); 
             _rb.drag += 3;
             StartCoroutine("DragChange");
         }

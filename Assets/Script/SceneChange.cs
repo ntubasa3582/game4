@@ -13,7 +13,7 @@ public class SceneChange : MonoBehaviour
     {
         _fadePanel.gameObject.SetActive(true); //フェードインパネルを非アクティブからアクティブにする
         //１つ目の引数はフェードインパネルのa値を0から255にする
-        _fadePanel.DOFade(1, _interval).OnComplete(() => SceneManager.LoadScene(_sceneName));
+        _fadePanel.DOFade(1, 0).OnComplete(() => SceneManager.LoadScene(_sceneName));
     }
     public void Move(string _sceneName)
     {
@@ -22,27 +22,28 @@ public class SceneChange : MonoBehaviour
 
     public void GameScene()
     {
+        //次のSceneに移動するときこのメソッドを使うことで楽になる
         if (SceneManager.GetActiveScene().name == "GameScene1-1")
         {
             SceneManager.LoadScene("GameScene1-2");
         }
-        if (SceneManager.GetActiveScene().name == "GameScene1-2")
+        else if (SceneManager.GetActiveScene().name == "GameScene1-2")
         {
             SceneManager.LoadScene("GameScene1-3");
         }
-        if (SceneManager.GetActiveScene().name == "GameScene1-3")
+        else if (SceneManager.GetActiveScene().name == "GameScene1-3")
         {
             SceneManager.LoadScene("GameScene1-4");
         }
-        if (SceneManager.GetActiveScene().name == "GameScene1-4")
+        else if (SceneManager.GetActiveScene().name == "GameScene1-4")
         {
             SceneManager.LoadScene("GameScene1-5");
         }
-        if (SceneManager.GetActiveScene().name == "GameScene1-5")
+        else if (SceneManager.GetActiveScene().name == "GameScene1-5")
         {
             SceneManager.LoadScene("GameScene1-6");
         }
-        if (SceneManager.GetActiveScene().name == "GameScene1-6")
+        else if (SceneManager.GetActiveScene().name == "GameScene1-6")
         {
             SceneManager.LoadScene("GameScene1-7");
         }
@@ -50,5 +51,7 @@ public class SceneChange : MonoBehaviour
         {
             SceneManager.LoadScene("GameScene1-8");
         }
+        this.gameObject.SetActive(false);
+        //セットアクティブがオンになっていると次のステージに行けてしまうのでオフにする
     }
 }

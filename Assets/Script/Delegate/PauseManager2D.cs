@@ -11,11 +11,13 @@ public class PauseManager2D : MonoBehaviour
     public event Action OnResetScene; //SpaceでSceneの初期化をする
     void Update()
     {
+        //ESCキーを押したらScene上のオブジェクトが止まり、オーディオウィンドウを開く
         if (Input.GetButtonDown("Cancel"))
         {
             _pauseFlg = !_pauseFlg;
             OnPauseResume(_pauseFlg);
         }
+        //SPACEキーが押されたら生成されたオブジェクトを削除してボールを初期位置に戻す
         if (Input.GetButtonDown("Jump"))
         {
             OnResetScene();

@@ -11,19 +11,13 @@ public class AudioDDOL : MonoBehaviour
     //[SerializeField] GameObject _obj2;
     void Start()
     {
-        if (FindObjectsOfType<AudioDDOL>().Length > 1)
+        if (FindObjectsOfType<AudioDDOL>().Length > 1)//同じゲームオブジェクトがSceneに2個以上ある場合削除する
         {
             Destroy(this.gameObject);
         }
         else
         {
-            DontDestroyOnLoad(_obj1);
+            DontDestroyOnLoad(_obj1);//ボタンが押されたときに値を次のsceneに引き継ぐ
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

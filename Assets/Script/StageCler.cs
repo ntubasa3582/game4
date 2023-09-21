@@ -10,10 +10,36 @@ public class StageCler : MonoBehaviour
     [SerializeField] GameObject _spawnGameobject;
     [SerializeField] GameObject _managerGameObject;
     [SerializeField] Canvas _clearCanvas;
-
-    private void Start()
+    [SerializeField] GameObject _nextButton;
+    GameObject[] _posObj;
+    bool _posSwich= false;
+    private void Awake()
     {
+        Invoke("Swich", 0.1f);
         _clearCanvas.enabled = false;
+        _posObj = GameObject.FindGameObjectsWithTag("PosGoal");//PosGoalのタグが付いているゲームオブジェクトを探してくる
+        if (_posObj != null)
+        {
+            if (SceneManager.GetActiveScene().name != "Title")
+            {
+                this.transform.position = _posObj[0].transform.position;
+                //探してきたゲームオブジェクトの座標を自身のゲームオブジェクトに代入する
+            }
+        }
+
+    }
+
+    void Update()
+    {
+        _posObj = GameObject.FindGameObjectsWithTag("PosGoal");
+
+        if (_posSwich == true )//座標がずっと同じになってしまうのでロックをかけている
+        {
+            this.transform.position = _posObj[0].transform.position;
+//探してきたゲームオブジェクトの座標を自身のゲームオブジェクトに代入する
+            _posSwich = false;
+            Debug.Log(_posObj[0]);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -22,6 +48,18 @@ public class StageCler : MonoBehaviour
             _clearCanvas.enabled = true; //プレイヤーがこのオブジェクトに触れたらクリアキャンバスを表示する      
             _spawnGameobject.SetActive(false); //ステージクリア後にオブジェクトを生成しないようにセットアクティブをFalseにする
             _managerGameObject.SetActive(false); //ステージクリア後にsceneをリセットしないようにセットアクティブをFaseにする
+            _nextButton.SetActive(true);
         }
     }
+    public void ResetGoalPos()
+    {
+        _posObj[0] = null;
+        Invoke("Swich",0.1f);
+//ボタンを押した時にラグがありScene移動前のSceneの値を拾うために少し遅延している        
+    }
+    void Swich()
+    {
+        _posSwich = true;
+    }
+
 }

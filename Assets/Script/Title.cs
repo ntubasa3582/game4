@@ -11,6 +11,7 @@ public class Title : MonoBehaviour
     [SerializeField] string _sceneName;
     [SerializeField] float _interval;
     [SerializeField] GameObject[] _text;
+    [SerializeField] GameObject _ddolgo;
     int _objectCount = 0; //0が黄色 1緑色 2赤色
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class Title : MonoBehaviour
             }
             Debug.Log(_objectCount);
         }
+        //オブジェクトの説明をしているテキストを切り替えている
         if (_objectCount == 0)
         {
             _text[0].SetActive(true);
@@ -54,6 +56,7 @@ public class Title : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             _fadePanel.DOFade(1, _interval).OnComplete(() => SceneManager.LoadScene(_sceneName));
+            DontDestroyOnLoad(_ddolgo);
         }
     }
 }

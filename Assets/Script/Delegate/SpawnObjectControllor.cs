@@ -46,7 +46,7 @@ public class SpawnObjectControllor : MonoBehaviour
         }
     }
 
-    public void Pause() //escが押されたらアニメーションスピードを0にする
+    public void Pause() //escが押されたら動きを止める
     {
        // _angularVelocity = _rb.angularVelocity;
         _velocity = _rb.velocity;
@@ -55,7 +55,7 @@ public class SpawnObjectControllor : MonoBehaviour
 
     }
 
-    public void Resume()
+    public void Resume()//もう一度押されたら動き出す
     {
         //_rb.bodyType = RigidbodyType2D.Dynamic;
         _rb.WakeUp();

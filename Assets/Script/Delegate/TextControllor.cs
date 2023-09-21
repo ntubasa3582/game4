@@ -6,7 +6,7 @@ public class TextControllor : MonoBehaviour
 {
     Animator _animator;
     PauseManager2D _pauseManager = default;
-    float _speedStorage = 0;
+    //float _speedStorage = 0;
     // Start is called before the first frame update
     void Awake()
     {
