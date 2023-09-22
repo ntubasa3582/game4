@@ -11,7 +11,7 @@ public class ChangeSoundVolume : MonoBehaviour
     float _interval = 0f;
     bool _audioPlay = false;
 
-    private void Start()
+    private async void Start()
     {
         // "AudioSource"コンポーネントを取得
         _audioSource = gameObject.GetComponent<AudioSource>();

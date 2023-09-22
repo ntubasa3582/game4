@@ -12,10 +12,16 @@ public class StageCler : MonoBehaviour
     [SerializeField] Canvas _clearCanvas;
     [SerializeField] GameObject _nextButton;
     GameObject[] _posObj;
+    AudioSource _audioSource;
+    AudioClip _clip;
     bool _posSwich= false;
+    bool _bgmSwich= true;
     private void Awake()
     {
         Invoke("Swich", 0.1f);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        _audioSource = GetComponent<AudioSource>();
+        _clip = GetComponent<AudioClip>();
         _clearCanvas.enabled = false;
         _posObj = GameObject.FindGameObjectsWithTag("PosGoal");//PosGoalのタグが付いているゲームオブジェクトを探してくる
         if (_posObj != null)
@@ -49,6 +55,11 @@ public class StageCler : MonoBehaviour
             _spawnGameobject.SetActive(false); //ステージクリア後にオブジェクトを生成しないようにセットアクティブをFalseにする
             _managerGameObject.SetActive(false); //ステージクリア後にsceneをリセットしないようにセットアクティブをFaseにする
             _nextButton.SetActive(true);
+            if (_bgmSwich == true )
+            {
+                _audioSource.Play();
+                _bgmSwich = false;
+            }
         }
     }
     public void ResetGoalPos()
@@ -60,6 +71,11 @@ public class StageCler : MonoBehaviour
     void Swich()
     {
         _posSwich = true;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        _bgmSwich = true;
     }
 
 }
